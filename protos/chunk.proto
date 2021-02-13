@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package protos;
+
+// Chunk is an arbitrary chunk of bytes
+message Chunk {
+  // The order that this chunk fits in, in relation to other chunks
+  int64 o = 1;
+  // The chunked data itself
+  bytes d = 3;
+}
